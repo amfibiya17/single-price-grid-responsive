@@ -4,7 +4,14 @@ import CardContainer from "../../components/CardContainer";
 
 const Home = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "98vh",
+      }}
+    >
       <CardContainer />
     </Box>
   );

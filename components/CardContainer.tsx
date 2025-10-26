@@ -4,7 +4,12 @@ import CardHeader from "./CardHeader";
 
 const CardContainer = () => {
   return (
-    <Box>
+    <Box
+      sx={{
+        maxWidth: "39.6875rem",
+        maxHeight: "29.6875rem",
+      }}
+    >
       <CardHeader />
     </Box>
   );
