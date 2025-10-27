@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import React from "react";
 import CardHeader from "./CardHeader";
+import Cta from "./Cta";
 
 const CardContainer = () => {
   return (
@@ -11,6 +12,9 @@ const CardContainer = () => {
       }}
     >
       <CardHeader />
+      <Box>
+        <Cta />
+      </Box>
     </Box>
   );
 };
