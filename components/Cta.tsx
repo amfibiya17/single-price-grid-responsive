@@ -10,12 +10,13 @@ const Cta = () => {
         padding: "2.5rem",
         backgroundColor: "#2ab3b1",
         maxWidth: "19.875rem",
+        borderRadius: "0 0 0 0.5rem",
       }}
     >
       <Typography
         sx={{ color: "#ffffff", fontSize: "1.125rem", fontWeight: "600" }}
       >
-        Monthly Subscription
+        Monthly Plan
       </Typography>
       <Typography
         sx={{
@@ -27,7 +28,7 @@ const Cta = () => {
           marginTop: "1rem",
         }}
       >
-        £29
+        £33
         <span
           style={{
             color: "rgba(255, 255, 255, 0.5)",
@@ -40,12 +41,12 @@ const Cta = () => {
         </span>
       </Typography>
       <Typography sx={{ color: "#ffffff" }}>
-        Full access for les than £1 a day
+        Unlimited access to everything
       </Typography>
       <Button
         sx={{
           marginTop: "1.5rem",
-          backgroundColor: "#C0DF33",
+          backgroundColor: "#c0df33",
           color: "#ffffff",
           width: "100%",
           textTransform: "none",
@@ -53,7 +54,7 @@ const Cta = () => {
           padding: "1rem",
         }}
       >
-        Sign Up
+        Join the community
       </Button>
     </Box>
   );

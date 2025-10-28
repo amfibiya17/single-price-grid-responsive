@@ -14,7 +14,7 @@ const CardHeader = () => {
       <Typography
         sx={{ fontSize: "1.5rem", color: "#2ab3b1", fontWeight: "600" }}
       >
-        Join our community
+        Become part of our learning family
       </Typography>
       <Typography
         sx={{
@@ -24,12 +24,12 @@ const CardHeader = () => {
           margin: "1.5rem 0 0.75rem 0",
         }}
       >
-        30-day, hassle-free money back guarantee
+        Try it risk-free for 30 days
       </Typography>
       <Typography sx={{ color: "#9aa7be" }}>
-        Gain access to our full library of tutorials along with expert code
-        reviews. Perfect for any developers who are serious about honing their
-        skills.
+        Build your skills with bite-size lessons, expert guidance, and an
+        encouraging community that celebrates your wins and helps you keep
+        moving forward.
       </Typography>
     </Box>
   );
