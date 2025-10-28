@@ -1,10 +1,14 @@
+"use client";
 import Box from "@mui/material/Box";
 import React from "react";
 import CardHeader from "./CardHeader";
 import WhyUsContainer from "./WhyUsContainer";
 import Cta from "./Cta";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const CardContainer = () => {
+  const mobile = useMediaQuery("(max-width:600px)");
+
   return (
     <Box
       sx={{
@@ -13,7 +17,12 @@ const CardContainer = () => {
       }}
     >
       <CardHeader />
-      <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr" }}>
+      <Box
+        sx={{
+          display: "grid",
+          gridTemplateColumns: mobile ? "1fr" : "1fr 1fr",
+        }}
+      >
         <Cta />
         <WhyUsContainer />
       </Box>

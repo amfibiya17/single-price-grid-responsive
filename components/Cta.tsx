@@ -2,15 +2,18 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import React from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Cta = () => {
+  const mobile = useMediaQuery("(max-width:600px)");
+
   return (
     <Box
       sx={{
         padding: "2.5rem",
         backgroundColor: "#2ab3b1",
         maxWidth: "19.875rem",
-        borderRadius: "0 0 0 0.5rem",
+        borderRadius: mobile ? "0" : "0 0 0 0.5rem",
       }}
     >
       <Typography

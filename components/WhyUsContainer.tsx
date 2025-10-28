@@ -1,15 +1,18 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import React from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const WhyUsContainer = () => {
+  const mobile = useMediaQuery("(max-width:600px)");
+
   return (
     <Box
       sx={{
         padding: "2.5rem",
         backgroundColor: "#4abdbd",
         maxWidth: "19.875rem",
-        borderRadius: "0 0 0.5rem 0",
+        borderRadius: mobile ? "0 0 0.5rem 0.5rem" : "0 0 0.5rem 0",
       }}
     >
       <Box>
