@@ -14,6 +14,7 @@ const CardContainer = () => {
       sx={{
         maxWidth: "39.6875rem",
         maxHeight: "29.6875rem",
+        boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)",
       }}
     >
       <CardHeader />
