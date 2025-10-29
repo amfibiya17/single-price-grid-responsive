@@ -31,49 +31,49 @@ const WhyUsContainer = () => {
             marginTop: "1rem",
           }}
         >
-          Easy-to-follow tutorials
+          Tutorials by industry experts
         </Typography>
         <Typography
           sx={{
             color: "#ffffff",
           }}
         >
-          Feedback that builds confidence
+          Peer & expert code review
         </Typography>
         <Typography
           sx={{
             color: "#ffffff",
           }}
         >
-          Quick, hands-on challenges
+          Coding exercises
         </Typography>
         <Typography
           sx={{
             color: "#ffffff",
           }}
         >
-          Peer support and discussion spaces
+          Access to our GitHub repos
         </Typography>
         <Typography
           sx={{
             color: "#ffffff",
           }}
         >
-          Track your growth with progress tools
+          Community forum
         </Typography>
         <Typography
           sx={{
             color: "#ffffff",
           }}
         >
-          New lessons added every week
+          Flashcard decks
         </Typography>
         <Typography
           sx={{
             color: "#ffffff",
           }}
         >
-          Learn at your own pace
+          New videos every week
         </Typography>
       </Box>
     </Box>

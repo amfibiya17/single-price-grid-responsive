@@ -53,7 +53,8 @@ const Cta = () => {
           color: "#ffffff",
           width: "100%",
           textTransform: "none",
-          fontWeight: "800",
+          fontSize: "1.2rem",
+          fontWeight: "600",
           padding: "1rem",
         }}
       >
