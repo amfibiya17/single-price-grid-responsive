@@ -1,8 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Responsive Pricing Grid (Simple Exercise)
 
-## Getting Started
+This is a small responsive **Pricing Grid** built as a short exercise in **React**, using **Material UI (MUI)** and **TypeScript**.
 
-First, run the development server:
+---
+
+### 🧩 Overview
+
+The project replicates a simple two-column pricing card layout for desktop and a stacked layout for mobile.  
+It demonstrates how to use **MUI’s Box**, **Typography**, and responsive styling with **`sx` props**.
+
+**Desktop view:**
+![Desktop layout](./screenshots/desktop.png)
+
+**Mobile view:**
+![Mobile layout](./screenshots/mobile.png)
+
+---
+
+### 🛠️ Tech
+
+- **React** (functional components)
+- **Material UI (MUI v5)**
+- **TypeScript**
+
+---
+
+### ⚙️ Setup & Run
+
+#### 1. Clone the repository
+
+```bash
+# with HTTPS
+git clone https://github.com/amfibiya17/single-price-grid-responsive.git
+
+# or with SSH
+git clone https://github.com/amfibiya17/single-price-grid-responsive.git
+```
+
+#### 2. Go into the project
+```bash
+cd single-price-grid-responsive
+```
+
+#### 3. Install dependencies
+
+```bash
+npm install
+# or
+yarn
+# or
+pnpm install
+```
+
+#### 4. Run the dev server
 
 ```bash
 npm run dev
@@ -10,27 +60,4 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
