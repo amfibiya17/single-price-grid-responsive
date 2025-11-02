@@ -3,27 +3,22 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import {
-  ctaRoot,
-  ctaPlan,
-  ctaPriceRow,
-  ctaPriceMutedSpan,
-  ctaNote,
-  ctaButton,
-} from "./styles";
+import { Styles } from "./styles";
 
 const Cta = () => {
   const mobile = useMediaQuery("(max-width:600px)", { noSsr: true });
 
   return (
-    <Box sx={ctaRoot(mobile)}>
-      <Typography sx={ctaPlan}>Monthly Plan</Typography>
-      <Typography sx={ctaPriceRow}>
+    <Box sx={Styles.ctaRoot(mobile)}>
+      <Typography sx={Styles.ctaPlan}>Monthly Plan</Typography>
+      <Typography sx={Styles.ctaPriceRow}>
         £33
-        <span style={ctaPriceMutedSpan}>per month</span>
+        <span style={Styles.ctaPriceMutedSpan}>per month</span>
       </Typography>
-      <Typography sx={ctaNote}>Unlimited access to everything</Typography>
-      <Button sx={ctaButton}>Join the community</Button>
+      <Typography sx={Styles.ctaNote}>
+        Unlimited access to everything
+      </Typography>
+      <Button sx={Styles.ctaButton}>Join the community</Button>
     </Box>
   );
 };

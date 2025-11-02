@@ -1,112 +1,109 @@
 import { SxProps, Theme } from "@mui/material/styles";
+import type React from "react";
 
-/** Home */
-export const homeRoot: SxProps<Theme> = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  height: "98vh",
-};
+export const Styles = {
+  /** Home */
+  homeRoot: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    height: "98vh",
+  } as SxProps<Theme>,
 
-/** CardContainer */
-export const cardContainerRoot: SxProps<Theme> = {
-  maxWidth: "39.6875rem",
-  maxHeight: "29.6875rem",
-};
+  /** CardContainer */
+  cardContainerRoot: {
+    maxWidth: "39.6875rem",
+    maxHeight: "29.6875rem",
+  } as SxProps<Theme>,
 
-export const gridCols = (mobile: boolean): SxProps<Theme> => ({
-  display: "grid",
-  gridTemplateColumns: mobile ? "1fr" : "1fr 1fr",
-});
+  gridCols: (mobile: boolean): SxProps<Theme> => ({
+    display: "grid",
+    gridTemplateColumns: mobile ? "1fr" : "1fr 1fr",
+  }),
 
-/** CardHeader */
-export const headerRoot: SxProps<Theme> = {
-  padding: "2.5rem",
-  backgroundColor: "#ffffff",
-  borderRadius: "0.5rem 0.5rem 0 0",
-};
+  /** CardHeader */
+  headerRoot: {
+    padding: "2.5rem",
+    backgroundColor: "#ffffff",
+    borderRadius: "0.5rem 0.5rem 0 0",
+  } as SxProps<Theme>,
 
-export const headerTitle: SxProps<Theme> = {
-  fontSize: "1.5rem",
-  color: "#2ab3b1",
-  fontWeight: "600",
-};
+  headerTitle: {
+    fontSize: "1.5rem",
+    color: "#2ab3b1",
+    fontWeight: 600,
+  } as SxProps<Theme>,
 
-export const headerSubtitle: SxProps<Theme> = {
-  fontSize: "1.125rem",
-  color: "#c0df33",
-  fontWeight: "600",
-  margin: "1.5rem 0 0.75rem 0",
-};
+  headerSubtitle: {
+    fontSize: "1.125rem",
+    color: "#c0df33",
+    fontWeight: 600,
+    margin: "1.5rem 0 0.75rem 0",
+  } as SxProps<Theme>,
 
-export const headerBody: SxProps<Theme> = {
-  color: "#9aa7be",
-};
+  headerBody: { color: "#9aa7be" } as SxProps<Theme>,
 
-/** CTA */
-export const ctaRoot = (mobile: boolean): SxProps<Theme> => ({
-  padding: "2.5rem",
-  backgroundColor: "#2ab3b1",
-  maxWidth: { sm: "19.875rem" },
-  borderRadius: mobile ? "0" : "0 0 0 0.5rem",
-});
+  /** CTA */
+  ctaRoot: (mobile: boolean): SxProps<Theme> => ({
+    padding: "2.5rem",
+    backgroundColor: "#2ab3b1",
+    maxWidth: { sm: "19.875rem" },
+    borderRadius: mobile ? "0" : "0 0 0 0.5rem",
+  }),
 
-export const ctaPlan: SxProps<Theme> = {
-  color: "#ffffff",
-  fontSize: "1.125rem",
-  fontWeight: "600",
-};
+  ctaPlan: {
+    color: "#ffffff",
+    fontSize: "1.125rem",
+    fontWeight: 600,
+  } as SxProps<Theme>,
 
-export const ctaPriceRow: SxProps<Theme> = {
-  color: "#ffffff",
-  fontSize: "2rem",
-  fontWeight: "800",
-  display: "flex",
-  alignItems: "center",
-  marginTop: "1rem",
-};
+  ctaPriceRow: {
+    color: "#ffffff",
+    fontSize: "2rem",
+    fontWeight: 800,
+    display: "flex",
+    alignItems: "center",
+    marginTop: "1rem",
+  } as SxProps<Theme>,
 
-export const ctaPriceMutedSpan: React.CSSProperties = {
-  color: "rgba(255, 255, 255, 0.5)",
-  fontWeight: 400,
-  fontSize: "1rem",
-  marginLeft: "0.75rem",
-};
+  ctaPriceMutedSpan: {
+    color: "rgba(255, 255, 255, 0.5)",
+    fontWeight: 400,
+    fontSize: "1rem",
+    marginLeft: "0.75rem",
+  } as React.CSSProperties,
 
-export const ctaNote: SxProps<Theme> = {
-  color: "#ffffff",
-};
+  ctaNote: { color: "#ffffff" } as SxProps<Theme>,
 
-export const ctaButton: SxProps<Theme> = {
-  marginTop: "1.5rem",
-  backgroundColor: "#c0df33",
-  color: "#ffffff",
-  width: "100%",
-  textTransform: "none",
-  fontSize: "1.2rem",
-  fontWeight: "600",
-  padding: "1rem",
-};
+  ctaButton: {
+    marginTop: "1.5rem",
+    backgroundColor: "#c0df33",
+    color: "#ffffff",
+    width: "100%",
+    textTransform: "none",
+    fontSize: "1.2rem",
+    fontWeight: 600,
+    padding: "1rem",
+  } as SxProps<Theme>,
 
-/** WhyUs */
-export const whyRoot = (mobile: boolean): SxProps<Theme> => ({
-  padding: "2.5rem",
-  backgroundColor: "#4abdbd",
-  maxWidth: { sm: "19.875rem" },
-  borderRadius: mobile ? "0 0 0.5rem 0.5rem" : "0 0 0.5rem 0",
-});
+  /** WhyUs */
+  whyRoot: (mobile: boolean): SxProps<Theme> => ({
+    padding: "2.5rem",
+    backgroundColor: "#4abdbd",
+    maxWidth: { sm: "19.875rem" },
+    borderRadius: mobile ? "0 0 0.5rem 0.5rem" : "0 0 0.5rem 0",
+  }),
 
-export const whyTitle: SxProps<Theme> = {
-  color: "#ffffff",
-  fontSize: "1.125rem",
-  fontWeight: "600",
-};
+  whyTitle: {
+    color: "#ffffff",
+    fontSize: "1.125rem",
+    fontWeight: 600,
+  } as SxProps<Theme>,
 
-export const whyItemFirst: SxProps<Theme> = {
-  color: "#ffffff",
-  marginTop: "1rem",
-};
+  whyItemFirst: {
+    color: "#ffffff",
+    marginTop: "1rem",
+  } as SxProps<Theme>,
 
-export const whyItem: SxProps<Theme> = {
-  color: "#ffffff",
-};
+  whyItem: { color: "#ffffff" } as SxProps<Theme>,
+} as const;
