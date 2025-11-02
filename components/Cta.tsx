@@ -5,7 +5,7 @@ import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Cta = () => {
-  const mobile = useMediaQuery("(max-width:600px)");
+  const mobile = useMediaQuery("(max-width:600px)", { noSsr: true });
 
   return (
     <Box
