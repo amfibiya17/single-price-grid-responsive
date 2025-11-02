@@ -9,11 +9,8 @@ This is a small responsive **Pricing Grid** built as a short exercise in **React
 The project replicates a simple two-column pricing card layout for desktop and a stacked layout for mobile.  
 It demonstrates how to use **MUI’s Box**, **Typography**, and responsive styling with **`sx` props**.
 
-**Desktop view:**
-![Desktop layout](./screenshots/desktop.png)
-
-**Mobile view:**
-![Mobile layout](./screenshots/mobile.png)
+**Desktop and Mobile Views:**
+![Desktop and Mobile Layouts](.\public\dm.png)
 
 ---
 
@@ -61,3 +58,7 @@ yarn dev
 # or
 pnpm dev
 ```
+
+#### 5. Open in the browser
+
+http://localhost:3000
