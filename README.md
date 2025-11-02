@@ -10,7 +10,7 @@ The project replicates a simple two-column pricing card layout for desktop and a
 It demonstrates how to use **MUI’s Box**, **Typography**, and responsive styling with **`sx` props**.
 
 **Desktop and Mobile Views:**
-![Desktop and Mobile Layouts](.\public\dm.png)
+![Desktop and Mobile Layouts](./public/dm.png)
 
 ---
 
