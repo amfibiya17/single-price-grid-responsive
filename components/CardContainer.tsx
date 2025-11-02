@@ -5,24 +5,15 @@ import CardHeader from "./CardHeader";
 import WhyUsContainer from "./WhyUsContainer";
 import Cta from "./Cta";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { cardContainerRoot, gridCols } from "./styles";
 
 const CardContainer = () => {
   const mobile = useMediaQuery("(max-width:600px)", { noSsr: true });
 
   return (
-    <Box
-      sx={{
-        maxWidth: "39.6875rem",
-        maxHeight: "29.6875rem",
-      }}
-    >
+    <Box sx={cardContainerRoot}>
       <CardHeader />
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: mobile ? "1fr" : "1fr 1fr",
-        }}
-      >
+      <Box sx={gridCols(mobile)}>
         <Cta />
         <WhyUsContainer />
       </Box>

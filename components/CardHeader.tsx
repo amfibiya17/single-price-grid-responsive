@@ -1,32 +1,16 @@
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import React from "react";
+import { headerRoot, headerTitle, headerSubtitle, headerBody } from "./styles";
 
 const CardHeader = () => {
   return (
-    <Box
-      sx={{
-        padding: "2.5rem",
-        backgroundColor: "#ffffff",
-        borderRadius: "0.5rem 0.5rem 0 0",
-      }}
-    >
-      <Typography
-        sx={{ fontSize: "1.5rem", color: "#2ab3b1", fontWeight: "600" }}
-      >
+    <Box sx={headerRoot}>
+      <Typography sx={headerTitle}>
         Become part of our learning family
       </Typography>
-      <Typography
-        sx={{
-          fontSize: "1.125rem",
-          color: "#c0df33",
-          fontWeight: "600",
-          margin: "1.5rem 0 0.75rem 0",
-        }}
-      >
-        Try it risk-free for 30 days
-      </Typography>
-      <Typography sx={{ color: "#9aa7be" }}>
+      <Typography sx={headerSubtitle}>Try it risk-free for 30 days</Typography>
+      <Typography sx={headerBody}>
         Build your skills with bite-size lessons, expert guidance, and an
         encouraging community that celebrates your wins and helps you keep
         moving forward.
