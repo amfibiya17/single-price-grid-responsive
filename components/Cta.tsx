@@ -3,6 +3,8 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { ctaCopy } from "../src/content/pricing";
+
 import { Styles } from "./styles";
 
 const Cta = () => {
@@ -10,15 +12,14 @@ const Cta = () => {
 
   return (
     <Box sx={Styles.ctaRoot(mobile)}>
-      <Typography sx={Styles.ctaPlan}>Monthly Plan</Typography>
+      <Typography sx={Styles.ctaPlan}>{ctaCopy.planLabel}</Typography>
       <Typography sx={Styles.ctaPriceRow}>
-        £33
-        <span style={Styles.ctaPriceMutedSpan}>per month</span>
+        {ctaCopy.currencySymbol}
+        {ctaCopy.price}
+        <span style={Styles.ctaPriceMutedSpan}>{ctaCopy.priceNote}</span>
       </Typography>
-      <Typography sx={Styles.ctaNote}>
-        Unlimited access to everything
-      </Typography>
-      <Button sx={Styles.ctaButton}>Join the community</Button>
+      <Typography sx={Styles.ctaNote}>{ctaCopy.note}</Typography>
+      <Button sx={Styles.ctaButton}>{ctaCopy.button}</Button>
     </Box>
   );
 };
