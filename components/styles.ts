@@ -13,8 +13,12 @@ export const Styles = {
 
   /** CardContainer */
   cardContainerRoot: {
+    width: "100%",
     maxWidth: "39.6875rem",
-    maxHeight: "29.6875rem",
+    mx: { xs: 1, sm: "auto" },
+    my: { xs: 3, sm: 6 },
+    overflow: "hidden",
+    boxShadow: "0 8px 24px rgba(0,0,0,0.12)",
   } as SxProps<Theme>,
 
   gridCols: {
