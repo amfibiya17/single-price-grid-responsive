@@ -7,7 +7,8 @@ export const Styles = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    height: "98vh",
+    minHeight: "98vh",
+    px: { xs: 2, sm: 0 },
   } as SxProps<Theme>,
 
   /** CardContainer */
@@ -16,16 +17,16 @@ export const Styles = {
     maxHeight: "29.6875rem",
   } as SxProps<Theme>,
 
-  gridCols: (mobile: boolean): SxProps<Theme> => ({
+  gridCols: {
     display: "grid",
-    gridTemplateColumns: mobile ? "1fr" : "1fr 1fr",
-  }),
+    gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
+  } as SxProps<Theme>,
 
   /** CardHeader */
   headerRoot: {
     padding: "2.5rem",
     backgroundColor: "#ffffff",
-    borderRadius: "0.5rem 0.5rem 0 0",
+    borderRadius: { xs: "0.5rem 0.5rem 0 0", sm: "0.5rem 0.5rem 0 0" },
   } as SxProps<Theme>,
 
   headerTitle: {
@@ -44,12 +45,12 @@ export const Styles = {
   headerBody: { color: "#9aa7be" } as SxProps<Theme>,
 
   /** CTA */
-  ctaRoot: (mobile: boolean): SxProps<Theme> => ({
+  ctaRoot: {
     padding: "2.5rem",
     backgroundColor: "#2ab3b1",
     maxWidth: { sm: "19.875rem" },
-    borderRadius: mobile ? "0" : "0 0 0 0.5rem",
-  }),
+    borderRadius: { xs: "0", sm: "0 0 0 0.5rem" },
+  } as SxProps<Theme>,
 
   ctaPlan: {
     color: "#ffffff",
@@ -87,12 +88,12 @@ export const Styles = {
   } as SxProps<Theme>,
 
   /** WhyUs */
-  whyRoot: (mobile: boolean): SxProps<Theme> => ({
+  whyRoot: {
     padding: "2.5rem",
     backgroundColor: "#4abdbd",
     maxWidth: { sm: "19.875rem" },
-    borderRadius: mobile ? "0 0 0.5rem 0.5rem" : "0 0 0.5rem 0",
-  }),
+    borderRadius: { xs: "0 0 0.5rem 0.5rem", sm: "0 0 0.5rem 0" },
+  } as SxProps<Theme>,
 
   whyTitle: {
     color: "#ffffff",

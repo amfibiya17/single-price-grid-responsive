@@ -2,16 +2,13 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import React from "react";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { ctaCopy } from "../src/content/pricing";
 
 import { Styles } from "./styles";
 
 const Cta = () => {
-  const mobile = useMediaQuery("(max-width:600px)", { noSsr: true });
-
   return (
-    <Box sx={Styles.ctaRoot(mobile)}>
+    <Box sx={Styles.ctaRoot}>
       <Typography sx={Styles.ctaPlan}>{ctaCopy.planLabel}</Typography>
       <Typography sx={Styles.ctaPriceRow}>
         {ctaCopy.currencySymbol}
